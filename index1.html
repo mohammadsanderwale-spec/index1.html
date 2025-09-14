@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rihan Sandarwale — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#6ee7b7;
+      --muted:#94a3b8;
+      --glass: rgba(255,255,255,0.04);
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial; margin:0; background:linear-gradient(180deg,var(--bg),#071024); color:#e6eef8; -webkit-font-smoothing:antialiased}
+    .container{max-width:1000px; margin:28px auto; padding:20px}header{display:flex;gap:20px;align-items:center}
+.photo{width:132px;height:132px;border-radius:16px;overflow:hidden;flex:0 0 132px;background:linear-gradient(135deg,#0b1220, #0a2237);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.intro{flex:1}
+h1{margin:0;font-size:28px;letter-spacing:0.2px}
+p.lead{margin:6px 0 0;color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:22px}
+
+.card{background:var(--card);border-radius:14px;padding:18px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+
+.about h2,.skills h2,.education h2,.contact h2{margin:0 0 10px;font-size:16px}
+.about p{color:#cfe7ff;line-height:1.6}
+
+.skills-list{display:flex;flex-wrap:wrap;gap:8px}
+.skill{background:var(--glass);padding:8px 12px;border-radius:999px;font-size:13px;color:var(--accent);border:1px solid rgba(110,231,183,0.09)}
+
+.edu-item{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+.edu-item:last-child{border-bottom:0}
+
+.contact a{display:inline-block;margin-right:8px;margin-top:6px;padding:8px 12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.03)}
+
+.btn-primary{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#34d399);color:#02211a;font-weight:600;text-decoration:none}
+
+footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+
+/* responsive */
+@media (max-width:880px){.grid{grid-template-columns:1fr;}.photo{width:110px;height:110px}}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="photo">
+        <!-- Replace 'photo.jpg' with your photo file name (put the image in the same folder) -->
+        <img src="photo.jpg" alt="Rihan Sandarwale Photo" onerror="this.style.opacity=0.08;this.style.background='linear-gradient(135deg,#082a2a,#08304a)';">
+      </div>
+      <div class="intro">
+        <h1>Rihan Sandarwale</h1>
+        <p class="lead">BCA student at DMS Mandal — Web design & front-end beginner. I build simple, clean portfolio sites and keep learning newer languages and tools.</p>
+        <a class="btn-primary" href="#contact">Contact me</a>
+      </div>
+    </header><div class="grid">
+  <main>
+    <section class="card about">
+      <h2>About</h2>
+      <p>
+        Hello — I'm <strong>Rihan Sandarwale</strong>, currently studying BCA at <strong>DMS Mandal</strong>. I'm learning web development (HTML, CSS, JavaScript) and database basics as part of my course. I enjoy designing clean user interfaces and building small projects to practice responsive web design.
+      </p>
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <h2>Projects</h2>
+      <p style="color:var(--muted)">A personal portfolio website created using HTML, CSS, and JavaScript to showcase my skills, education, and contact details.
+ .</p>
+    </section>
+  </main>
+
+  <aside>
+    <section class="card skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">Basic JavaScript</div>
+        <div class="skill">SQL (Basics)</div>
+        <div class="skill">Git & GitHub</div>
+      </div>
+    </section>
+
+    <section class="card education" style="margin-top:16px">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <div>
+          <strong>10th</strong><div style="font-size:13px;color:var(--muted)">School</div>
+        </div>
+        <div><strong>70%</strong></div>
+      </div>
+      <div class="edu-item">
+        <div>
+          <strong>12th</strong><div style="font-size:13px;color:var(--muted)">College</div>
+        </div>
+        <div><strong>60%</strong></div>
+      </div>
+      <div class="edu-item">
+        <div>
+          <strong>BCA</strong><div style="font-size:13px;color:var(--muted)">DMS Mandal (ongoing)</div>
+        </div>
+        <div><strong>Studying</strong></div>
+      </div>
+    </section>
+
+    <section class="card contact" id="contact" style="margin-top:16px">
+      <h2>Contact</h2>
+      <div style="font-size:14px;line-height:1.5">
+        <div><strong>Phone</strong>: 8088550256</div>
+        <div><strong>Email</strong>: <a href="mailto:rihansanderwale9@gmail.com">rihansanderwale9@gmail.com</a></div>
+        <div style="margin-top:8px;color:var(--muted);font-size:13px">Location: DMS Mandal</div>
+      </div>
+      <a href="mailto:rihansanderwale9@gmail.com">Send email</a>
+    </section>
+  </aside>
+</div>
+
+<footer>
+  © <span id="year"></span> Rihan Sandarwale — Built with HTML & CSS
+</footer>
+
+  </div>  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script></body>
+</html>
